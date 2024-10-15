@@ -16,20 +16,20 @@ int main(){
 }
 int binarysearch(int arr[], int size, int key){
   int start = 0;
-  int end = size-1;
+  int end = size-1;  
 
-  int mid =(start+end)/2 ;
+  int mid =start+ (end-start)/2 ;
   while(start<=end){
     if(arr[mid] == key){
       return mid;
     }
-    if(key > arr[mid]){ //mid ke aage vali value ke liye
-      start = mid+1;
+    if(key > arr[mid]){
+      start = mid+1;  // mid ke bad vali value keliye
     }
-    else{               //mid ke pehle vali value
-      end= mid-1;
+    else{
+      end= mid-1;  //mid ke pehle vali value keliye
     }
-    mid = (start+end)/2;
+    mid = start+ (end-start)/2;
   }
   return -1;
 }
