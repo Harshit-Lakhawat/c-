@@ -23,10 +23,10 @@ int binarysearch(int arr[], int size, int key){
     if(arr[mid] == key){
       return mid;
     }
-    if(key > arr[mid]){
+    if(key > arr[mid]){ //mid ke aage vali value ke liye
       start = mid+1;
     }
-    else{
+    else{               //mid ke pehle vali value
       end= mid-1;
     }
     mid = (start+end)/2;
