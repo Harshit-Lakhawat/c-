@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-  int a=0;
+  int a=0;  //a=-1 if you want it from 0
   int b=1;
   int n=10;
   for(int i=1; i<=n; i++){
