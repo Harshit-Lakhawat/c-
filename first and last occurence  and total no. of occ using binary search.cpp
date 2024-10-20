@@ -10,7 +10,9 @@ int main(){
   cout << "First Occurrence of 3 is : " << firstocc(odd , 13 ,3) <<endl;
 
    cout << "last Occurrence of 3 is : " << lastocc(odd , 13 ,3) <<endl;
-  
+
+  cout << " total no. of occurrence is : "<< lastocc(odd, 13, 3)-firstocc(odd, 13, 3) + 1 << endl;
+
 }
 
 int firstocc(int arr[], int n, int key){
