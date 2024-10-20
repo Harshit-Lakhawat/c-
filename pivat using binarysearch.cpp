@@ -9,7 +9,7 @@ int getpivat(int arr[], int n){
 
   while(s<e){
 
-    if(arr[mid] == arr[0]){
+    if(arr[mid] >= arr[0]){
       s = mid + 1;
     }
     else{
@@ -21,9 +21,7 @@ int getpivat(int arr[], int n){
 }
 
 int main(){
-  int arr[5] = {8, 10, 17, 1, 3};
-
+  int arr[5] = {3, 8, 10, 17, 1};
+  
   cout << "pivat is : " << getpivat(arr, 5) << endl;
-
-  return 0;
 }
