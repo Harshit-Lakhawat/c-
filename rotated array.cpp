@@ -8,7 +8,7 @@ void rotate(vector<int> &nums, int k) {
   vector<int> temp(nums.size());
 
   for (int i = 0; i < nums.size(); i++) {
-    temp[(i + k) % nums.size()] = nums[i];
+    temp[(i + k) % nums.size()] = nums[i];    // because percentage helps us to limit its range from 1 to 9 
   }
 
   nums = temp;
