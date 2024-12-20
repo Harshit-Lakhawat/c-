@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>               // using STL vector
 
-using namespace std;            // capacity gives space                                       assign for element
-int main(){                     // size gives no. of                                          elements
+using namespace std;            // capacity gives space assign for element
+int main(){                     // size gives no. of elements
 
    vector<int> v;
 
